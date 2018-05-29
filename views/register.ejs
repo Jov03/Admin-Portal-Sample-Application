@@ -1,0 +1,38 @@
+<% include ./partials/header%>
+
+<form class="container register" action="/Register" method="POST">
+    <h2 class="text-center">Register</h2>
+    <div class="form-group">
+        <label for="username">Username</label>
+        <input class="form-control" name="username" id="username" type="text" required>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label for="password">Password</label>
+            <input class="form-control" name="password" id="password" type="password" required>
+        </div>
+        <div class="form-group col-md-6">
+            <label for="Confirmpassword">Confirm Password</label>
+            <input class="form-control" name="confirmpassword" id="confirmpassword" type="password" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input class="form-control" name="email" id="Email" type="email" required>
+    </div>
+    <div class="form-group">
+        <label for="Mobile">Mobile</label>
+        <input class="form-control" name="mobile" id="Email" type="tel" required>
+    </div>
+    <div class="form-group">
+        <label for="Role">Role</label>
+        <select class="form-control" name="role" id="Role">
+            <option value="IT_USER_NORMAL" selected>IT_USER_NORMAL</option>
+            <option value="IT_ADMIN">IT_ADMIN</option>
+        </select>
+    </div>
+
+
+    <button class="btn btn-lg btn-primary btn-block">Register</button>
+</form>
+    <% include ./partials/footer%>

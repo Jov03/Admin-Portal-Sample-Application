@@ -1,0 +1,35 @@
+.login{
+    margin:12% auto;
+    padding:2%;
+    max-width: 330px;
+    width: 100%;
+    -webkit-box-shadow: 6px 9px 48px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 9px 48px -10px rgba(0,0,0,0.75);
+    box-shadow: 6px 9px 48px -10px rgba(0,0,0,0.75);
+}
+.register{
+    margin:5% auto;
+    padding:2%;
+    max-width: 330px;
+    width: 100%;
+    -webkit-box-shadow: 6px 9px 48px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 9px 48px -10px rgba(0,0,0,0.75);
+    box-shadow: 6px 9px 48px -10px rgba(0,0,0,0.75);
+}
+.CreateCompany{
+    margin:5% auto;
+    padding:2%;
+    max-width: 330px;
+    width: 100%;
+    -webkit-box-shadow: 6px 9px 48px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 9px 48px -10px rgba(0,0,0,0.75);
+    box-shadow: 6px 9px 48px -10px rgba(0,0,0,0.75);
+}
+
+.UserWelcome{
+    margin: 5% 0;
+}
+.sort{
+    display: inline;
+    max-width: 100px;
+}

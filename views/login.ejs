@@ -1,0 +1,32 @@
+<% include ./partials/header%>
+<body>
+ <div class="container">
+    <%if(error&&error.length>0) {%>
+        <div class="alert alert-danger">
+            <%=error%>
+        </div>
+    <%}%>
+    <%if(success&&success.length>0){%>
+        <div class="alert alert-success">
+            <%=success%>
+        </div>
+    <%}%>
+    <form class="container login" action="/login" method="POST">
+        <h2 class="text-center">Login</h2>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input class="form-control" name="username" id="username" type="text">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input class="form-control" name="password" id="password" type="password">
+        </div>
+
+
+        <button class="btn btn-lg btn-primary btn-block">Login</button>
+        <a class="btn btn-secondary btn-lg btn-block" href="/Register">Register</a>
+    </form>
+
+<% include ./partials/footer%>
+
+  

@@ -1,0 +1,33 @@
+<% include ./partials/header%>
+<% include ./partials/navbar%>
+
+<div class="container">
+    <h4 class="UserWelcome">Welcome,
+        <%=currentUser.username%>
+    </h4>
+    <div>Sort By:
+        <select class="form-control sort" onChange="filter(value)">
+            
+            <option value=0>None</option>
+            <option value=1>Company</option>
+            <option value=2>Created By</option>
+        </select>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Company Name</th>
+                <th>Created By</th>
+                <th>Company Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="CompanyTable">
+        </tbody>
+    </table>
+</div>
+
+<script src="js/AdminView.js"></script>
+
+
+<% include ./partials/footer%>
