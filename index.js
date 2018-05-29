@@ -11,15 +11,15 @@ var express = require('express'),
 app = express();
 
 //Connect to DB
-mongoose.connect('mongodb://localhost/VisionFirst');
-// mongoose.connect('mongodb://'+process.env.COSMOSDB_USERNAME+'.documents.azure.com:10255/jovblog?ssl=true', {
-//     auth: {
-//         user: process.env.COSMOSDB_USERNAME,
-//         password: process.env.COSMOSDB_PASSWORD
-//     }
-//     })
-//     .then(() => console.log('connection successful'))
-//     .catch((err) => console.error(err));
+//mongoose.connect('mongodb://localhost/VisionFirst');
+mongoose.connect('mongodb://'+process.env.COSMOSDB_USERNAME+'.documents.azure.com:10255/visionfirst?ssl=true', {
+    auth: {
+        user: process.env.COSMOSDB_USERNAME,
+        password: process.env.COSMOSDB_PASSWORD
+    }
+    })
+    .then(() => console.log('connection successful'))
+    .catch((err) => console.error(err));
 
 
 app.set('view engine', "ejs");
